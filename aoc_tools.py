@@ -42,7 +42,7 @@ def read_input_to_nums(in_file):  # use this if there are characters in the inpu
     f.close()
     return result
 
-def read_input_to_nums_neg(in_file):  # use this if there are charactes in the input which need to be filtered out
+def read_input_to_nums_neg(in_file):  # use this if there are characters in the input which need to be filtered out
     f = open(in_file)
     nums = [re.findall(r'-*\d+', line) for line in f]  # include negative numbers
     result = [[int(n) for n in num] for num in nums]  # covert to numbers
