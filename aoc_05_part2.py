@@ -42,5 +42,7 @@ if __name__ == '__main__':
     #         print(e - 1)
 
     for i in range(1, len(sorted_seat_ids)):
+        print(sorted_seat_ids[i])
         if sorted_seat_ids[i] != sorted_seat_ids[i - 1] + 1:
             print(sorted_seat_ids[i] - 1)
+            break
