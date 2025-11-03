@@ -22,7 +22,7 @@ def count_bags(key):
             if k is None:
                 return 0
             else:
-                bag_count = v + (v * count_bags(k))
+                bag_count += v + (v * count_bags(k))
     return bag_count
 
 
