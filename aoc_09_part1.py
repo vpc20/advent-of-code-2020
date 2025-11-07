@@ -15,14 +15,16 @@ def valid_num(target_sum, nums):
 
 
 if __name__ == '__main__':
-    # nums = read_input_to_nums2('aoc_09_testdata1.txt')
-    nums = read_input_to_nums2('aoc_09_data1.txt')
+    nums = read_input_to_nums2('aoc_09_testdata1.txt')
+    # nums = read_input_to_nums2('aoc_09_data1.txt')
     print(nums)
+    preamble_len = 5
+    # preamble_len = 25
 
     start = 0
-    end = 25
+    end = preamble_len
 
-    for num in nums[25:]:
+    for num in nums[preamble_len:]:
         if not valid_num(num, nums[start:end]):
             print(num)
             break
